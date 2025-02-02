@@ -1,5 +1,6 @@
 package org.jung.crypto.service;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.jung.crypto.domain.User;
 import org.jung.crypto.dto.CustomUserDetails;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class CustomUserDetailsService implements UserDetailsService {
     private final UserRepository userRepository;
 

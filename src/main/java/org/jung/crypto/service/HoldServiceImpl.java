@@ -1,5 +1,6 @@
 package org.jung.crypto.service;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.jung.crypto.domain.Hold;
@@ -19,6 +20,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Service
 @Log4j2
+@Transactional
 public class HoldServiceImpl implements HoldService {
     private final ModelMapper modelMapper;
     private final HoldRepository holdRepository;
