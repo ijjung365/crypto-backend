@@ -1,0 +1,5 @@
+controller-service-repository
+get - fetch - findby
+register-create-save
+modify/change-update-save
+remove-delete-deleteby
